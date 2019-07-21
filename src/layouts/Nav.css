@@ -1,0 +1,11 @@
+.menu {
+    flex: 1;
+  }
+  .menu__option {
+    display: inline;
+    margin-right: 1em;
+  }
+  .menu__entry--active {
+    border-bottom: solid 1px black;
+  }
+  

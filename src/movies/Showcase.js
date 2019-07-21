@@ -1,14 +1,16 @@
 import React from 'react'
 
+import './Showcase.css'
+
 const Showcase = props =>
-    <ul>
+    <ul className='showcase'>
         {
             props.children &&
-            <li>{ props.children }</li>
+            <li className='showcase__item'>{ props.children }</li>
         }
         {
             props.items.map( item =>
-                <li key={props.keys(item)}>
+                <li className='showcase__item' key={props.keys(item)}>
                     {
                         props.render(item)
                     }

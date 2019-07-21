@@ -1,0 +1,12 @@
+.search {
+    padding: 0.41em;
+    border: none;
+    border-bottom: solid 1px lightgray;
+    font-family: inherit;
+    outline: none;
+    transition: transform linear .1s;
+}
+
+.search:hover {
+    transform: scale(1.1);
+}

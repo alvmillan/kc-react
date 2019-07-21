@@ -1,0 +1,15 @@
+.showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 15em);
+    grid-column-gap: 1em;
+    justify-content: space-evenly;
+    grid-row-gap: 1em;
+}
+
+.showcase__item {
+  transition: transform ease-in-out .3s;
+}
+.showcase__item:hover {
+  transform: scale(1.1);
+}
+

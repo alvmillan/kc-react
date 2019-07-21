@@ -1,0 +1,11 @@
+.movie_showcase__heading {
+    margin-bottom: 1em;
+  }
+  .movie_showcase__movie {
+    height: 20em;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    border-radius: .5em;
+    box-shadow: 0px 0px 10px;
+  }
+  

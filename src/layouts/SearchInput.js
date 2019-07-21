@@ -2,15 +2,17 @@ import React from 'react'
 import { withRouter } from 'react-router-dom'
 import { routes } from '../Routes'
 
+import './SearchInput.css'
+
 class SearchInput extends React.Component {
     state = {}
-
     render() {
         const { query = '' } = this.state
 
         return (
-            <form onSubmit={this.onSubmit}>
+            <form noValidate onSubmit={this.onSubmit}>
                 <input 
+                    className='search'
                     type='search'
                     name='query'
                     placeholder='Search'

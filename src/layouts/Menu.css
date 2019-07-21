@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0px 1px 5px lightgrey;
+    position: fixed;
+    background: white;
+    z-index: 2;
+  }
+  .header + * {
+    padding: 2em;
+    padding-top: 5em;
+  }
