@@ -1,5 +1,8 @@
 import React from 'react'
 
+import withApi from '../core/withApi'
+import withLoading from '../core/withLoading'
+
 class MovieDetails extends React.Component {
     state = {}
     componentDidMount() {

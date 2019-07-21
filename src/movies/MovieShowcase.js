@@ -9,12 +9,12 @@ export default ( {movies, children}) =>
         <div>
             {children}
         </div>
-        <Showcase items={movies} keys={movie => movie.id} render={movie => {
+        <Showcase items={movies} keys={movie => movie.id} render={movie => 
             <Link to={routes.movieDetail(movie.id)}>
                 <img
                     src={movie.poster_path}
                     alt={movie.title}
                 />
             </Link>
-        }} />
+        } />
     </div>

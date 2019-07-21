@@ -2,6 +2,7 @@ import React from 'react'
 import {Switch, Route } from 'react-router'
 
 import PopularMovies from './movies/PopularMovies'
+import MovieDetail from './movies/MovieDetail'
 
 const Routes = () => 
     <Switch>
