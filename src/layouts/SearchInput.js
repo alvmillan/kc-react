@@ -10,27 +10,31 @@ class SearchInput extends React.Component {
         const { query = '' } = this.state
 
         return (
-            <form noValidate onSubmit={this.onSubmit}>
-                <input 
-                    className='search'
-                    type='search'
-                    name='query'
-                    placeholder='Search'
-                    value={query}
-                    onChange={this.onValueChanges}
-                />
-            </form>
+            <div className='search-form'>
+                <form id="search" noValidate onSubmit={this.onSubmit}>
+                    <input 
+                        className='search'
+                        type='search'
+                        name='query'
+                        placeholder='Search'
+                        value={query}
+                        onChange={this.onValueChanges}
+                    />
+                </form>
+                <button className='button button__search' type='submit' form="search">Search</button>
+            </div>
         )
     }
 
-    onValueChanges = (target) => this.setState({[target.name]: target.value})
+    onValueChanges = ({target}) => this.setState({[target.name]: target.value})
 
     onSubmit = e => {
         e.preventDefault()
         const { query = '' } = this.state
-
-        if( query.trim() > 0) {
-            this.props.history.push(routes.searchResults(query ))
+        
+        console.log(query);
+        if( query.trim().length > 0) {
+            this.props.history.push(routes.searchResults(query))
         }
 
     }

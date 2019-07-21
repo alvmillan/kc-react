@@ -1,3 +1,7 @@
+.search-form {
+    display: inherit;
+}
+
 .search {
     padding: 0.41em;
     border: none;
@@ -5,6 +9,11 @@
     font-family: inherit;
     outline: none;
     transition: transform linear .1s;
+}
+
+.button__search {
+    margin-left: 5%;
+    padding: 0.25em;
 }
 
 .search:hover {
