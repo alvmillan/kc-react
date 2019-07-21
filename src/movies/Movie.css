@@ -1,0 +1,69 @@
+.movie__poster {
+    float: left;
+    margin-right: 2em;
+    max-width: 33%;
+    box-shadow: 0px 0px 25px lightgrey;
+  }
+  
+  .movie__release_year {
+    margin: 0 .5em;
+  }
+  
+  .movie__title {
+    margin-bottom: .5em;
+  }
+  .movie__tagline {
+    font-style: italic;
+    font-weight: 100;
+    font-size: .48em;
+    display: block;
+    margin: .5em 0;
+  }
+  
+  .movie__genres {
+    margin-bottom: 1em;
+  }
+  
+  .movie__plot {
+    margin-bottom: 2em;
+    text-align: justify;
+  }
+  .movie__collections {
+    float: left;
+    clear: both;
+    margin-top: 1em;
+    max-width: 33%;
+  }
+  .movie__collections_list {
+    margin-bottom: 1em;
+  }
+  
+  .movie__collection {
+    border-radius: 8px;
+    padding: .25em;
+    min-width: 5em;
+    margin: .1em;
+    padding: .1em;
+    background: navy;
+    color: white;
+  }
+  .movie__collection:before {
+    font-size: 1.2em;
+    display: inline-block;
+    margin: 0 .2em;
+    content: '\00d7';
+  }
+  
+  .movie__cast_title {
+    margin-bottom: 1em;
+  }
+  .movie__cast {
+    display: flex;
+    flex-direction: column;
+  }
+  .movie__castmember {
+    padding-bottom: 1em;
+    border-bottom: solid 1px lightgray;
+    margin-bottom: 1em;
+  }
+  

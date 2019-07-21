@@ -1,0 +1,46 @@
+.new_collection {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px lightgray;
+    max-width: 32em;
+  }
+  
+  
+  .new_collection__form_title {
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1em;
+    border-bottom: solid 1px lightgray;
+    padding-bottom: .5em;
+  }
+  
+  .new_collection__form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .new_collection__name {
+    margin-bottom: 1em;
+    align-items: center;
+    display: inline-flex;
+  }
+  
+  .new_collection__name_input {
+    flex: 1;
+    padding: 0.41em;
+    border: none;
+    border-bottom: solid 1px lightgray;
+    font-family: inherit;
+    outline: none;
+    margin-left: 1em;
+  }
+  
+  .new_collection__create_button {
+    margin: 1em 0;
+  }
+  

@@ -1,0 +1,13 @@
+.movie_collections__add_new {
+    cursor: pointer;
+  }
+  
+  .movie_collections__title {
+    font-weight: 300;
+    font-size: 1.2em;
+    padding-top: .5em;
+  }
+  .movie_collections__collection_movie_count {
+    margin-left: .5em;
+  }
+  

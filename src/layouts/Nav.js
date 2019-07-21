@@ -16,6 +16,15 @@ const Nav = (props) =>
                     Popular movies
                 </NavLink>
             </li>
+            <li className='menu__option'>
+                <NavLink
+                    className='menu__entry'
+                    activeClassName='menu__entry--active'
+                    to={routes.movieCollections()}
+                >
+                    My movies
+                </NavLink>
+            </li>
         </ul>
     </nav>
 
