@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter } from 'react-router-dom'
 import './App.css';
+import { Context } from './core/withApi'
+import Routes from './Routes'
+import Menu from './layouts/Menu'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const API_CONFIG = {
+  apiUrl: '',
+  apiKey: '',
+  storeKey: 'myMovies'
 }
+
+const api = {};
+const App = () =>
+    <Context.Provider value={api}>
+      <BrowserRouter>
+        <>
+          <Menu />
+          <Routes />
+        </>
+      </BrowserRouter>
+    </Context.Provider>
 
 export default App;
